@@ -1,5 +1,6 @@
 package Amazon;
 
+import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
 
@@ -13,6 +14,7 @@ public class Main {
 		Frame.setVisible(true);
 		Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Home home = new Home();
+		ScrollPane scrollpane = new ScrollPane();
 		Frame.getContentPane().add(home);
 		Frame.pack();
 	}

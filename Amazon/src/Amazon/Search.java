@@ -17,7 +17,7 @@ public class Search {
 	
 	public static Component Search() {
 		JButton Search = new JButton();
-		ImageIcon icon = new ImageIcon(Buttons.class.getResource("/Amazon/Search.png"));
+		ImageIcon icon = new ImageIcon(Buttons.class.getResource("/Amazon/icon/Search.png"));
 		Image image = icon.getImage();
 		Image smallicon = image.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
 		icon = new ImageIcon(smallicon);
