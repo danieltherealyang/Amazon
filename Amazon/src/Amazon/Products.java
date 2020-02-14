@@ -1,10 +1,12 @@
 package Amazon;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.GridBagLayout;
 import java.awt.Image;
 
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -14,7 +16,7 @@ import javax.swing.JTextArea;
 public class Products {
 	public static Component Tyler1Shirt() {
 		JPanel Tyler1Shirt = new JPanel();
-		Tyler1Shirt.setSize(300, 500);
+		Tyler1Shirt.setSize(200, 500);
 		JButton Shirt = new JButton();
 		ImageIcon shirtPic = new ImageIcon(Buttons.class.getResource("/Amazon/products/Tyler1_Shirt.jpg"));
 		Image image = shirtPic.getImage();
@@ -22,6 +24,7 @@ public class Products {
 		shirtPic = new ImageIcon(scaled);
 		Shirt.setIcon(shirtPic);
 		Shirt.setAlignmentX(Component.CENTER_ALIGNMENT);
+		Tyler1Shirt.setBorder(BorderFactory.createLineBorder(Color.black));;
 		
 		JTextArea Description = new JTextArea("TYLER1 Trademark Alpha Shirt");
 		Description.setAlignmentX(Component.CENTER_ALIGNMENT);

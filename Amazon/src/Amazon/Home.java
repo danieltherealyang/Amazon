@@ -24,10 +24,11 @@ public class Home extends JPanel {
 	public void setHome(JPanel panel) {
 		panel.setSize(1000,1000);
 		Buttons Buttons = new Buttons(this);
+		JButton SearchIcon = Search.Search();
 		panel.add(Buttons.AmazonLogo(), BorderLayout.NORTH);
 		panel.add(Search.Label());
-		panel.add(Search.SearchBar(), BorderLayout.NORTH);
-		panel.add(Search.Search());
+		panel.add(Search.SearchBar(SearchIcon), BorderLayout.NORTH);
+		panel.add(SearchIcon);
 		panel.add(Amazon.Buttons.TodaysDeals());
 		panel.add(Amazon.Buttons.BestSellers());
 		panel.add(Amazon.Buttons.FindaGift());
