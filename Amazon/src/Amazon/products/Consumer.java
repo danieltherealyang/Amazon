@@ -13,7 +13,7 @@ public class Consumer
 		cdescript=descript;
 		cprice=price;
 		ctarrif=tarrif;
-		//picture
+		//picture//
 	}
 
 	
