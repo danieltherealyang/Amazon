@@ -50,18 +50,23 @@ public class Consumer
   
         // WRITE IMAGE 
         
-        //try
-        //{ 
+        try
+        { 
             // Output file path 
-            //File output_file = new File("G:\\Out.jpg"); 
+            File output_file = new File("G:\\Out.jpg"); 
   
             // Writing to file taking type and path as 
-            //ImageIO.write(image, "jpg", output_file); 
+            ImageIO.write(image, "jpg", output_file); 
   
-            //System.out.println("Writing complete."); 
-        //} 
+            System.out.println("Writing complete."); 
+            
+        } 
 
-	
+        
+        catch(IOException e) 
+        { 
+            System.out.println("Error: "+e); 
+        } 
 	
 	
 	}
