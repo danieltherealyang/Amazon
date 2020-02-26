@@ -10,8 +10,8 @@ public class Consumer
 	private String cdescript;
 	private int cprice;
 	private int ctarrif;
-	
-	public Consumer(String title, String descript, int price, int tarrif)
+	private BufferedImage cbyte;
+	public Consumer(String title, String descript, int price, int tarrif,BufferedImage pic)
 	{
 		ctitle=title;
 		cdescript=descript;
@@ -82,7 +82,7 @@ public class Consumer
 	public static Consumer[] Consumerdata()
 	{
 		Consumer[] con= {
-				new Consumer("Title Here","descipt here",1, 1)
+				new Consumer("Title Here","descipt here",1, 1,pic?)
 				
 				
 				
