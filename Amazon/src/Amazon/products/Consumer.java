@@ -40,7 +40,7 @@ public class Consumer
   
              // Reading input file 
             image = ImageIO.read(input_file); 
-  
+            //write out the equal array for byte storage
             System.out.println("Reading complete."); 
         } 
         catch(IOException e) 
@@ -82,7 +82,7 @@ public class Consumer
 	public static Consumer[] Consumerdata()
 	{
 		Consumer[] con= {
-				new Consumer("Title Here","descipt here",1, 1,pic?)
+				new Consumer("Title Here","descipt here",1, 1,null)
 				
 				
 				
